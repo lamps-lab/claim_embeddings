@@ -1,6 +1,6 @@
 Step 1:  
 
-Use 'pre_processing.py' to obtain a csv file from the original 'SCORE_csv.xlsx' file.  
+Use 'pre_processing.py' to obtain a smaller csv file which only contains the data we need from the original 'SCORE_csv.xlsx' file.  
 Need to 'pip uninstall xlrd' in order to import excel files.  
 
 Step 2:
