@@ -2,7 +2,7 @@
 """
 Created on Thu Sep 30 23:23:49 2021
 
-@author: weixi
+@author: weixin
 """
 
 #This code is used to create embeddings for claim sentences
