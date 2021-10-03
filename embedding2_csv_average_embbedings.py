@@ -8,6 +8,7 @@ Created on Thu Sep 30 23:23:49 2021
 #This code is used to create embeddings for claim sentences
 # language model used here is RoBERTa
 # the embeddings for the 4 claim sentences are averaged to create the final embedding
+
 # need to run under flair environment, which can be created by the commands below:
 #conda create -n flair python=3.6
 #conda activate flair
@@ -24,12 +25,11 @@ from flair.data import Sentence
 
 
 claims = pd.read_csv(r'score.csv', encoding="utf8", usecols=['DOI_CR', 'paper_id', 'coded_claim2','coded_claim3a','coded_claim3b', 'coded_claim4']) 
-#claims = pd.DataFrame(df) 
+
 print(claims)
 claims_list = claims.values.tolist()
 
-#claims2 = df['coded_claim2']
-#claims3 = df['coded_claim3a']
+
 
 
 # init embedding
@@ -48,7 +48,7 @@ for i in range(0, len(claims_list)):
     DOI_CR = input_s_all[0]
     paper_id = input_s_all[1]
     input_s = input_s_all[2:]
-    #input_s = 'The grass is green.'
+    
     #print("***************", input_s)
     #print(DOI_CR)
     #print(paper_id)
@@ -84,7 +84,7 @@ for i in range(0, len(claims_list)):
     
     #print("average***************")
     average = (sentence[0].embedding +sentence[1].embedding +sentence[2].embedding +sentence[3].embedding)/4
-    #print(average[0])
+    
     #print(average)
     #print(average.size())
     
