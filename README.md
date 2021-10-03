@@ -7,6 +7,8 @@ Step 2:
 
 Use 'embedding2_csv_average_embbedings.py' for the averaged embedding or use 'embedding3_csv_concatenate_embbedings.py' for the concatenated embedding.  
 Both use pre-trained RoBERTa language model.  
+More pre-trainded models can be found here: https://huggingface.co/transformers/pretrained_models.html  
+
   
 Need to run under flair environment, which can be created by the commands below:  
 conda create -n flair python=3.6  
