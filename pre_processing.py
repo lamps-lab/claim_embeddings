@@ -10,7 +10,7 @@ Created on Fri Oct  1 15:00:58 2021
 
 #pip uninstall xlrd
 #pip install xlrd==1.2.0
-# This works!!
+
 
 
 import pandas as pd
