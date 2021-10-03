@@ -8,6 +8,7 @@ Created on Thu Sep 30 23:23:49 2021
 #This code is used to create embeddings for claim sentences
 # language model used here is RoBERTa
 # the embeddings for the 4 claim sentences are concatenated to create the final embedding
+
 # need to run under flair environment, which can be created by the commands below:
 #conda create -n flair python=3.6
 #conda activate flair
@@ -23,12 +24,11 @@ from flair.data import Sentence
 
 
 claims = pd.read_csv(r'score.csv', usecols=['DOI_CR', 'paper_id', 'coded_claim2','coded_claim3a','coded_claim3b', 'coded_claim4']) 
-#claims = pd.DataFrame(df) 
+
 print(claims)
 claims_list = claims.values.tolist()
 
-#claims2 = df['coded_claim2']
-#claims3 = df['coded_claim3a']
+
 
 
 # init embedding
@@ -99,7 +99,7 @@ for i in range(0, len(claims_list)):
     s0123 = np.append(DOI_CR, s0123)
     s0123 = np.append(paper_id, s0123)
     
-    #print(average)
+    
     
     
     all_concatenate_embb = np.vstack((all_concatenate_embb, s0123))     # append a list to another vertically
@@ -107,4 +107,4 @@ for i in range(0, len(claims_list)):
     
     
     
-np.savetxt('emb_roberta_concatenate.csv',all_concatenate_embb,delimiter=',', fmt="%s")     # fmt="%10s %10.3f"
+np.savetxt('emb_roberta_concatenate.csv',all_concatenate_embb,delimiter=',', fmt="%s")    
