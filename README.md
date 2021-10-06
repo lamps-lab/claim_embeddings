@@ -5,8 +5,9 @@ Need to 'pip uninstall xlrd' in order to import excel files.
 
 Step 2:
 
-Use 'embedding2_csv_average_embbedings.py' for the averaged embedding or use 'embedding3_csv_concatenate_embbedings.py' for the concatenated embedding.  
-Both use pre-trained RoBERTa language model.  
+Use 'embedding2_csv_average_embbedings.py' for the averaged embedding or use 'embedding3_csv_concatenate_embbedings.py' for the concatenated embedding,  
+'embedding4_csv_maxpool_embbedings.py' for the max pooling embedding.  
+All use pre-trained RoBERTa language model.  
 More pre-trainded models can be found here: https://huggingface.co/transformers/pretrained_models.html  
 
   
