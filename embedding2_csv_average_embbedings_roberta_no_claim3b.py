@@ -7,7 +7,7 @@ Created on Thu Sep 30 23:23:49 2021
 
 #This code is used to create embeddings for claim sentences
 # language model used here is RoBERTa
-# the embeddings for the 4 claim sentences are averaged to create the final embedding
+# the embeddings for the 3 claim sentences are averaged to create the final embedding
 # need to run under flair environment, which can be created by the commands below:
 #conda create -n flair python=3.6
 #conda activate flair
