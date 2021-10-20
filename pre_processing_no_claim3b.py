@@ -5,16 +5,9 @@ Created on Fri Oct  1 15:00:58 2021
 @author: weixi
 """
 
-# This code is used to create 'score.csv' from the original 'SCORE_csv.xlsx' file.
 
-# to load xlsx, need to 'pip install xlrd'
-#Successfully installed xlrd-2.0.1
-#XLRDError: Excel xlsx file; not supported
-#not working
-
-#pip uninstall xlrd
 #pip install xlrd==1.2.0
-# This works!!
+
 
 
 import pandas as pd
