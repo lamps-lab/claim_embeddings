@@ -8,7 +8,7 @@ Created on Fri Oct  1 15:00:58 2021
 # This code is used to create 'score.csv' from the original 'SCORE_csv.xlsx' file.
 
 
-#pip uninstall xlrd
+
 #pip install xlrd==1.2.0
 
 
