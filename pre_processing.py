@@ -15,8 +15,7 @@ Created on Fri Oct  1 15:00:58 2021
 
 import pandas as pd
 import numpy as np
-from flair.embeddings import TransformerWordEmbeddings
-from flair.data import Sentence
+
 
 
 path = r'SCORE_csv.xlsx'
