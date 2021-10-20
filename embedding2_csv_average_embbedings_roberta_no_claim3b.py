@@ -33,6 +33,8 @@ claims_list = claims.values.tolist()
 
 
 # init embedding
+#embedding = TransformerWordEmbeddings('xlnet-base-cased')
+#embedding = TransformerWordEmbeddings('distilbert-base-cased')
 #embedding = TransformerWordEmbeddings('bert-base-uncased')
 embedding = TransformerWordEmbeddings('roberta-base')
 print('====================================model loaded!')
